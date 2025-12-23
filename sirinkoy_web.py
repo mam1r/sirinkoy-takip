@@ -82,3 +82,25 @@ with col_sag:
         st.dataframe(df_kapali[cols].sort_values(by='kapanis_zamani', ascending=False), use_container_width=True)
     else:
         st.warning("Bu tarih aralığında işlem bulunamadı.")
+        # ... mevcut kodun en sonuna ekle ...
+st.divider()
+st.markdown(
+    """
+    <style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: transparent;
+        color: grey;
+        text-align: center;
+        font-style: italic;
+    }
+    </style>
+    <div class="footer">
+        <p>Developed by •MAM1R Yazılım• © 2024</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
